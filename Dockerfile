@@ -12,6 +12,7 @@ RUN apk-install \
     && rm -rf /var/cache/apk/* \
 
 COPY supervisord-nginx-php.ini /etc/supervisor.d/supervisord-nginx-php.ini
+COPY named.conf /etc/bind/named.conf
 
 EXPOSE 53/udp 53
 
