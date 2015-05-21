@@ -2,7 +2,7 @@
 
 FROM gliderlabs/alpine
 
-MAINTAINER vSense <admin@vsense.fr>
+MAINTAINER vSense <docker@vsense.fr>
 
 RUN apk-install \
     bind \
