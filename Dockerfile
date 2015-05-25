@@ -8,6 +8,7 @@ RUN apk-install \
     bind \
     supervisor \
     && rm -rf /var/cache/apk/*
+RUN mkdir /var/cache/bind
 
 COPY supervisord-bind.ini /etc/supervisor.d/supervisord-bind.ini
 COPY named.conf /etc/bind/named.conf
