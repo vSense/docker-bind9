@@ -16,6 +16,7 @@ RUN apk-install \
     && mkdir /var/cache/bind
 
 COPY supervisord-bind.ini /etc/supervisor.d/supervisord-bind.ini
+COPY supervisord.conf /etc/supervisord.conf
 COPY named.conf /etc/bind/named.conf
 COPY named.conf.default-zones /etc/bind/named.conf.default-zones
 COPY zones.rfc1918 /etc/bind/zones.rfc1918
