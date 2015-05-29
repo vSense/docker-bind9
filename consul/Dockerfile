@@ -4,6 +4,8 @@ FROM gliderlabs/alpine:3.1
 
 MAINTAINER vSense <docker@vsense.fr>
 
+ENV PKGVER 0.9.0
+
 RUN apk-install \
     bind \
     supervisor \
